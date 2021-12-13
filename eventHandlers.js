@@ -28,6 +28,7 @@ exports.registerEventHandlers = function (source) {
             console.log(error)
         }
     }
+
     function handleTemp(event) {
         // read variables from the event
         var data = {
