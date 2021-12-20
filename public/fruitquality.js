@@ -14,7 +14,6 @@ function initSSE() {
 }
 initSSE();
 
-
 // Array, in dem alle empfangenen Gas-Werte gespeichert werden.
 var allMeasurements = [];
 
@@ -25,9 +24,8 @@ var maxLevel = 500;
 function updateVariables(data) {
 
     if (data.eventName === "Gasdurch") {
-        // Erhaltenen Wert in der Variable 'lux' speichern
+        // Erhaltenen Wert in der Variable 'gas' speichern
         var gas = Number(data.eventData);
-        //console.log(lux);
 
         // Wert am Ende des Arrays 'allMeasurements' hinzufügen
         allMeasurements.push(gas);
