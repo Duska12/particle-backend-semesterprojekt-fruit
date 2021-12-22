@@ -40,14 +40,13 @@ function updateVariables(data) {
             color = "Coral";
         }
 
-        // CSS Style für die Hintergrundfarbe des Balkens
+        // Hintergrundfarbe des Balkens
         var colorStyle = "background-color: " + color + " !important;";
 
-        // CSS Style für die Breite des Balkens in Prozent
+        // Breite des Balkens in Prozent
         var widthStyle = "width: " + level + "%;"
 
-        // Oben definierte Styles für Hintergrundfarbe und Breite des Balkens verwenden, um
-        // den Progressbar im HTML-Dokument zu aktualisieren
+        // Progressbar im HTML-Dokument aktualisieren
         document.getElementById("gaslevel-bar").style = colorStyle + widthStyle;
 
         // Text unterhalb des Balkens aktualisieren
